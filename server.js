@@ -10,7 +10,8 @@ app.set('port', (process.env.PORT || 5000));
 app.set('views', __dirname + '/');
 
 // set the view engine to php
-app.set('view engine', 'php');
+// app.set('view engine', 'php');
+app.set('view engine', 'ejs');
 
 // make express look in the public directory for assets (css/js/img)
 app.use(express.static(__dirname + '/'));
