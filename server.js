@@ -1,9 +1,10 @@
 var express = require('express');
 var app = express();
 
+app.set('port', (process.env.PORT || 5000));
 // set the port of our application
 // process.env.PORT lets the port be set by Heroku
-var port = process.env.PORT || 8080;
+// var port = process.env.PORT || 8080;
 
 // views is directory for all template files
 app.set('views', __dirname + '/');
