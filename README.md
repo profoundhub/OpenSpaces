@@ -1,2 +1,2 @@
 # OpenSpaces
-OpenSpaces
+Demo Site: Open Spaces
