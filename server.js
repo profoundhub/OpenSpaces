@@ -16,11 +16,11 @@ app.set('views', __dirname + '/');
 app.set('view engine', 'ejs');
 
 app.get('/', function(request, response) {
-  response.render('/index');
+  response.render('index');
 });
 
 // make express look in the public directory for assets (css/js/img)
-app.use(express.static(__dirname + '/'));
+// app.use(express.static(__dirname + '/'));
 
 // set the home page route
 app.get('/', function(req, res) {
