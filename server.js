@@ -6,6 +6,8 @@ app.set('port', (process.env.PORT || 5000));
 // process.env.PORT lets the port be set by Heroku
 // var port = process.env.PORT || 8080;
 
+app.use(express.static(__dirname + '/public'));
+
 // views is directory for all template files
 app.set('views', __dirname + '/');
 
